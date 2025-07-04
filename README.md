@@ -29,22 +29,7 @@ A full-stack ad analysis and creative generation workflow powered by n8n, OpenAI
 
 ## 🚀 How It Works
 
-[Manual Trigger]
-↓
-[Apify: Facebook Ads Scraper]
-↓
-[Filter & Limit Results]
-↓
-[Download Ad Images]
-↓
-[Analyze with GPT-4o → Generate Change Prompts → Create Variants]
-↓
-[Generate Images (OpenAI DALL·E)]
-↓
-[Upload Assets to Google Drive]
-↓
-[Log to Google Sheets]
-
+The workflow begins with a manual trigger. It then scrapes active Facebook ads using Apify. The results are filtered and limited to a manageable set. Each ad image is downloaded, and then analyzed using GPT-4o, which produces detailed descriptions and generates change prompts. These prompts are used to create creative variants, which are passed to the OpenAI image API (DALL·E) to generate new visuals. The final assets are uploaded to Google Drive, and all relevant metadata is logged into Google Sheets for tracking.
 
 ---
 
